@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Left or Right</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      background: #eaeaea;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      text-align: center;
+      width: 90%;
+      max-width: 350px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+
+    img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    button {
+      width: 100%;
+      padding: 15px;
+      margin-top: 10px;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .left {
+      background: #ff5722;
+      color: white;
+    }
+
+    .right {
+      background: #3f51b5;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <img src="C:\Users\Uma\Html project\download.png" alt="Choice Image">
+
+    <h2>Left or Right?</h2>
+
+    <button class="left" onclick="choose('Left')">
+      LEFT
+    </button>
+
+    <button class="right" onclick="choose('Right')">
+      RIGHT
+    </button>
+  </div>
+
+  <script>
+    function choose(option) {
+      alert("You chose: " + option);
+    }
+  </script>
+
+</body>
+</html>
