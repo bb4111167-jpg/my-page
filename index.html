@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Start Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      background: #f2f2f2;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      text-align: center;
+      width: 90%;
+      max-width: 350px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+
+    img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    button {
+      width: 100%;
+      padding: 15px;
+      margin-top: 12px;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .btn1 { background: #4CAF50; color: white; }
+    .btn2 { background: #9E9E9E; color: white; }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <img src="C:\Users\Uma\Html project\2920798_26585.jpg" alt="Main Image">
+
+    <h2>Choose an option</h2>
+
+    <!-- ONLY this button goes to page2 -->
+    <button class="btn1" onclick="goToPage2()">
+      Button 1
+    </button>
+
+    <!-- This button currently does nothing -->
+    <button class="btn2">
+      Button 2
+    </button>
+  </div>
+
+  <script>
+    function goToPage2() {
+      window.location.href = "page2.html";
+    }
+  </script>
+
+</body>
+</html>
